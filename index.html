@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon_001.ico" type="image/x-icon">
+<title>妈妈家常菜大全</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", system-ui;
+}
+body{
+    min-height: 100vh;
+    /* picsum自然风光全屏背景，浅色遮罩保证文字清晰 */
+    background: linear-gradient(rgba(250,255,252,0.85), rgba(250,255,252,0.85)),
+    url("https://picsum.photos/1920/1080?nature,flower,green,forest") center/cover fixed;
+    padding: 40px 16px;
+}
+.container{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1{
+    font-size: 36px;
+    color: #2f7d47;
+    margin-bottom: 10px;
+}
+.subtitle{
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 45px;
+}
+/* 风景展示大图 */
+.banner-img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.banner-img img{
+    width: 100%;
+    display: block;
+}
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-btn{
+    display: block;
+    text-decoration: none;
+    padding: 26px 10px;
+    background-color: #439963;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 18px;
+    transition: all 0.25s ease;
+}
+.menu-btn:hover{
+    background-color: #2f7d47;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(47,125,71,0.25);
+}
+.tips-text{
+    margin-top: 45px;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+    background: rgba(255,255,255,0.6);
+    padding: 15px;
+    border-radius: 14px;
+}
+/* 手机适配缩小字体 */
+@media(max-width:600px){
+    h1{font-size: 28px;}
+    .menu-btn{font-size: 21px;padding: 22px 8px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>妈妈家常菜大全</h1>
+    <p class="subtitle">简单家常、养生清淡、面点煲汤一站式教程</p>
+
+    <!-- 风景大图 picsum固定柔和风景 -->
+    <div class="banner-img">
+        <img src="https://picsum.photos/id/1048/1200/420" alt="自然风光">
+    </div>
+
+    <div class="btn-box">
+        <a href="https://www.xiachufang.com" target="_blank" class="menu-btn">家常快手炒菜</a>
+        <a href="https://www.xiachufang.com" target="_blank" class="menu-btn">养胃养生炖汤</a>
+        <a href="https://www.xiachufang.com" target="_blank" class="menu-btn">包子馒头面点</a>
+        <a href="https://www.xiachufang.com" target="_blank" class="menu-btn">清淡凉拌小菜</a>
+        <a href="https://www.xiachufang.com" target="_blank" class="menu-btn">中老年食疗菜谱</a>
+    </div>
+
+    <p class="tips-text">
+        使用方法：点击按钮直接打开详细做菜步骤<br>
+        页面字体放大，看步骤不用眯眼睛，仅家人使用
+    </p>
+</div>
+</body>
+</html>
